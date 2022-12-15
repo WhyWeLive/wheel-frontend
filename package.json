@@ -1,0 +1,36 @@
+{
+  "name": "wheel-frontend",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "vite",
+    "build": "cross-env GENERATE_SOURCEMAP=false vite build",
+    "predeploy": "yarn run build",
+    "deploy": "vk-miniapps-deploy"
+  },
+  "dependencies": {
+    "@vkontakte/vk-miniapps-deploy": "^0.0.26",
+    "cross-env": "^7.0.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.26",
+    "@types/react-dom": "^18.0.9",
+    "@typescript-eslint/eslint-plugin": "^5.46.0",
+    "@typescript-eslint/parser": "^5.46.0",
+    "@vitejs/plugin-react-swc": "^3.0.0",
+    "eslint": "^8.29.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-import-resolver-typescript": "^3.5.2",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.6.1",
+    "eslint-plugin-react": "^7.31.11",
+    "prettier": "^2.8.1",
+    "typescript": "^4.9.3",
+    "vite": "^4.0.0",
+    "vite-plugin-svgr": "^2.3.0",
+    "vite-tsconfig-paths": "^4.0.2"
+  }
+}
